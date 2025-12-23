@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness AI Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🏋️ Fitness AI Assistant</h1>
+
+    <form action="/predict" method="post">
+        <div class="grid">
+            <input name="gender" placeholder="Gender (1=Male, 0=Female)" required>
+            <input name="age" placeholder="Age" required>
+            <input name="height" placeholder="Height (cm)" required>
+            <input name="weight" placeholder="Weight (kg)" required>
+            <input name="duration" placeholder="Workout Duration (min)" required>
+            <input name="heart_rate" placeholder="Heart Rate" required>
+            <input name="body_temp" placeholder="Body Temperature" required>
+        </div>
+
+        <textarea name="goal" placeholder="Describe your fitness goal..." rows="4" required></textarea>
+
+        <button type="submit">Generate Plan 🚀</button>
+    </form>
+</div>
+</body>
+</html>
